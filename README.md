@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+**Secret Wallet: One-Click Token Creation on Secret Network**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Secret Wallet is a user-friendly DApp that empowers anyone to seamlessly create a Secret Network wallet and deploy SNIP-20 tokens, all within a single, intuitive interface. It eliminates the technical barriers associated with Secret Network by providing a streamlined, no-code experience.
 
-In the project directory, you can run:
+Note: this was build under 48 hours for the hackathon (because yeah ive came to know about it later)
 
-### `npm start`
+**Key Features:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Social Login:** Simplify wallet creation by leveraging existing social media accounts for authentication (**Security Note:** This aspect requires careful implementation with robust security measures to protect user privacy and prevent potential vulnerabilities).
+* **One-Click Token Creation:** Define token details through a user-friendly interface and deploy your SNIP-20 token with just a click, no coding expertise needed.
+* **Planned Expansion:** The roadmap includes incorporating SNIP-721 NFT deployment, transforming Secret Wallet into a comprehensive platform for Secret Network interactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Benefits:**
 
-### `npm test`
+* **Effortless Token Creation:** Streamline the token creation process by eliminating complex setup or coding requirements.
+* **Enhanced Accessibility:** Open up Secret Network to a wider audience by making creating tokens effortless.
+* **Security Focus:** While social login offers convenience, the implementation will prioritize user privacy and security with appropriate measures (addressed in the Security Considerations section).
+* **Centralized Hub:** Secret Wallet serves as a one-stop shop for both wallet creation and token deployment on Secret Network.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Existing Ideas and Novelty
 
-### `npm run build`
+There have been efforts to simplify Secret Network interactions, but Secret Wallet offers a unique combination of features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Social Login for Wallet Creation:** While Secret Network tools may offer social login during wallet creation, this DApp focuses specifically on a streamlined one-click experience.
+* **No-Code Token Creation:** Existing solutions might require some technical knowledge, but Secret Wallet prioritizes a completely no-code approach.
+* **Combined Focus on Wallets and Tokens:** Some tools may address one aspect or the other, but Secret Wallet offers a unified platform for both.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It's important to conduct thorough research to confirm the novelty of social login for Secret Network wallet creation. However, the emphasis on a single-click, no-code process for deploying SNIP-20 tokens presents a distinct value proposition within the Secret Network ecosystem.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Security Considerations
 
-### `npm run eject`
+**Social Login:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Privacy-Preserving Login:** Utilize privacy-focused social login with combination of Web3Auth and Web5Nexus providers that minimize data collection and avoid storing sensitive information within the DApp.
+* **User Control:** Provide granular control over data shared with social login providers during wallet creation, it gives users thier private key access as well.
+* **Regular Security Audits:** Conduct regular security audits to identify and address any potential vulnerabilities associated with social login integration.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Current Limitation 
+- The WASM file can be only processed in backend, cannot be properly rendered in frontend, things will be updated in near future
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Server-Side Implementation (Considered Approach):**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* **Mitigate Client-Side Risks:** By using a secure server-side layer for Secret Network interactions, we can limit the amount of sensitive information exposed on the client-side.
+* **Secure Communication:** Employ robust authentication and authorization mechanisms for communication between the client-side DApp and the server-side infrastructure.
+* **Best Practices:** Adhere to industry best practices for secure server-side Secret Network interactions, including key management and transaction handling.
 
-## Learn More
+## Installation and Usage (To Be Updated Later)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
+npm run start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing (To Be Updated Later)
 
-### Code Splitting
+This section will outline guidelines and processes for contributing to the project's development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License (To Be Updated Later)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## References
 
-### Making a Progressive Web App
+* Link to Secret Network documentation: [https://scrt.network/](https://scrt.network/)
+* Link to SNIP-20 standard documentation: [https://docs.scrt.network/secret-network-documentation/overview-ecosystem-and-technology/secret-network-overview/private-tokens](https://docs.scrt.network/secret-network-documentation/overview-ecosystem-and-technology/secret-network-overview/private-tokens)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Disclaimer:** This is a work in progress, and the information provided is subject to change as development progresses.
